@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fullpage.css" />
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div id="fullpage">
+  <div class="section " id="section0">
+    <h1>fullPage.js</h1>
+    <p>No Anchor Links (#)</p>
+    <img src="imgs/fullPage.png" alt="fullPage" />
+  </div>
+  <div class="section" id="section1">
+    <div class="intro">
+      <h1>More Simple yet</h1>
+      <p>Sections won't contain anchor links. It's more simple to configure but a bit more restrictive.</p>
+    </div>
+  </div>
+  <div class="section" id="section2">
+    <div class="intro">
+      <h1>URL without /#</h1>
+      <p>But back button won't work!</p>
+    </div>
+  </div>
+</div>
+    
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/fullpage.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript">
+        var myFullpage = new fullpage('#fullpage', {
+            sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE']
+        });
+    </script>
+
+  </body>
+</html>

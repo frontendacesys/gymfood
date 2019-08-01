@@ -11,12 +11,15 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/fullpage.css" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 
     <title>GYMFOOOD</title>
 </head>
 
 <body>
+        <div id="circle"></div>
     <div id="fullpage">
         <div class="section " id="section0">
             <div class="header">
@@ -24,33 +27,35 @@
                     <div class="container-fluid">
                         <div class="d-flex flex-grow-1">
                             <span class="w-100 d-lg-none d-block">
-                                <!-- hidden spacer to center brand on mobile --></span>
-                            <a class="navbar-brand d-none d-lg-inline-block" href="#">
+                                <!-- hidden spacer to center brand on mobile -->
+                            </span>
+                            <a class="navbar-brand d-none d-lg-inline-block" href="index.html">
                                 <img src="img/logo.png" alt="logo" class="img-fluid logo">
                             </a>
-                            <a class="navbar-brand-two mx-auto d-lg-none d-inline-block" href="#">
+                            <a class="navbar-brand-two mx-auto d-lg-none d-inline-block" href="index.html">
                                 <img src="img/logo.png" alt="logo" class="img-fluid logo">
                             </a>
                             <div class="w-100 text-right">
-                                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                                    data-target="#myNavbar">
-                                    <span class="navbar-toggler-icon"></span>
-                                </button>
+                                <div class="nav-btn"  title="Toggle navigation">
+                                    <span></span>
+                                </div>
                             </div>
                         </div>
-                        <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
-                            <ul class="navbar-nav ml-auto flex-nowrap">
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link m-2 menu-item nav-active">MENU</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link m-2 menu-item">ORDER</a>
+                        <div class="collapse navbar-collapse flex-grow-1 text-right" id="mobNavbar">
+                            <ul class="navbar-nav flex-nowrap">
+                                <li class="nav-item nav-active">
+                                    <a href="menu.html" class="nav-link m-2 menu-item nav_menu">MENU</a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="#" class="nav-link m-2 menu-item">FEEDBACK</a>
                                 </li>
+                                
+                                
                                 <li class="nav-item">
                                     <a href="#" class="nav-link m-2 menu-item">CONTACT</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link m-2 menu-item order_menu">ORDER</a>
                                 </li>
                             </ul>
                         </div>
@@ -60,10 +65,14 @@
             </div>
             <div class="full_content hero_section">
                 <div class="container-fluid">
-                    <div class="hero_title">
-                        <h2>Eat Fit</h2>
-
-                        <a href="#"><button class="btn btn_gr">Order Now</button></a>
+                    <div class="hero_title" data-aos="fade-left" data-aos-duration="2000">
+                        <h2 >Eat Fit</h2>
+                        <div class="btn_wrap">
+                            <a href="order.html">
+                                <button class="btn btn_gr">Order Now</button>
+                            </a>
+                        </div>
+                        
                     </div>
                 </div>
 
@@ -89,79 +98,76 @@
                         <div class="col-md-6">
                             <div class="ft_title">
                                 <div class="row">
-                                    <div class="col-md-9 ft_titles">
+                                    <div class="col-md-9 ft_titles"  data-aos="fade-left" data-aos-duration="2000">
                                         <h2>
                                             <sup>1</sup>TRAIN LOREM IPSUM TEXT
                                         </h2>
                                     </div>
-                                    <div class="col-md-3 ft__icon">
+                                    <div class="col-md-3 ft__icon"  data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">
                                         <img src="img/ft_1.png" alt="" class="img-fluid">
                                     </div>
                                 </div>
                             </div>
-                            <div class="ft_dtl">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sagittis volutpat
-                                nisi, a lacinia urna pulvinar nec. Maecenas pretium sit amet ex nec mollis. In hendrerit
-                                id diam sed tempor.
+                            <div class="ft_dtl"  data-aos="fade-left" data-aos-duration="1200" data-aos-delay="700">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sagittis volutpat nisi, a lacinia urna pulvinar nec. Maecenas
+                                pretium sit amet ex nec mollis. In hendrerit id diam sed tempor.
                             </div>
                         </div>
 
                         <div class="col-md-6">
                             <div class="ft_title">
                                 <div class="row">
-                                    <div class="col-md-9 ft_titles">
+                                    <div class="col-md-9 ft_titles"  data-aos="fade-right" data-aos-duration="2000">
                                         <h2>
                                             <sup>2</sup>COOK LOREM IPSUM TEXT
                                         </h2>
                                     </div>
-                                    <div class="col-md-3 ft__icon">
+                                    <div class="col-md-3 ft__icon" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
                                         <img src="img/ft_3.png" alt="" class="img-fluid">
                                     </div>
                                 </div>
                             </div>
-                            <div class="ft_dtl">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sagittis volutpat
-                                nisi, a lacinia urna pulvinar nec. Maecenas pretium sit amet ex nec mollis. In hendrerit
-                                id diam sed tempor.
+                            <div class="ft_dtl" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="700">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sagittis volutpat nisi, a lacinia urna pulvinar nec. Maecenas
+                                pretium sit amet ex nec mollis. In hendrerit id diam sed tempor.
                             </div>
                         </div>
 
                         <div class="col-md-6">
                             <div class="ft_title">
                                 <div class="row">
-                                    <div class="col-md-9 ft_titles">
+                                    <div class="col-md-9 ft_titles" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="1000">
                                         <h2>
                                             <sup>3</sup>COOK LOREM IPSUM TEXT
                                         </h2>
                                     </div>
-                                    <div class="col-md-3 ft__icon">
+                                    <div class="col-md-3 ft__icon" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1500">
                                         <img src="img/ft_2.png" alt="" class="img-fluid">
                                     </div>
                                 </div>
                             </div>
-                            <div class="ft_dtl">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sagittis volutpat
-                                nisi, a lacinia urna pulvinar nec. Maecenas pretium sit amet ex nec mollis. In hendrerit
-                                id diam sed tempor.
+                            <div class="ft_dtl"  data-aos="fade-left" data-aos-duration="1200" data-aos-delay="1700">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sagittis volutpat nisi, a lacinia urna pulvinar nec. Maecenas
+                                pretium sit amet ex nec mollis. In hendrerit id diam sed tempor.
                             </div>
                         </div>
 
                         <div class="col-md-6">
                             <div class="ft_title">
                                 <div class="row">
-                                    <div class="col-md-9 ft_titles">
+                                    <div class="col-md-9 ft_titles" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="1000">
                                         <h2>
                                             <sup>4</sup>DELIVERY LOREM IPSUM TEXT
                                         </h2>
                                     </div>
-                                    <div class="col-md-3 ft__icon">
+                                    <div class="col-md-3 ft__icon" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1500"> 
                                         <img src="img/ft_4.png" alt="" class="img-fluid">
                                     </div>
                                 </div>
                             </div>
-                            <div class="ft_dtl">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sagittis volutpat nisi, a lacinia urna pulvinar nec. Maecenas pretium sit amet ex nec mollis. In hendrerit
-                                id diam sed tempor.
+                            <div class="ft_dtl" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="1700">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sagittis volutpat nisi, a lacinia urna pulvinar nec. Maecenas
+                                pretium sit amet ex nec mollis. In hendrerit id diam sed tempor.
                             </div>
                         </div>
                     </div>
@@ -169,41 +175,316 @@
             </div>
         </div>
         <div class="section" id="section2">
-                <div class="container-fluid line line_c">
-                        <div class="line-hz lw"></div>
+            <div class="container-fluid line line_c">
+                <div class="line-hz lw"></div>
+            </div>
+            <div class="container-fluid line line_bt">
+                <div class="line-hz lw"></div>
+            </div>
+
+            <div class="full_content abt_section">
+                <div class="container-fluid">
+                    <div class="hz_title hz_l">
+                        <h3>ABOUT</h3>
                     </div>
-                    <div class="hz_line_c"></div>
-                    <div class="container-fluid line line_bt">
-                            <div class="line-hz lw"></div>
+                    <div class="abt_content">
+                        <h3 data-aos="fade-left" data-aos-duration="2000" data-aos-delay="1000">GEORGE LOREM IPSUM TEXT</h3>
+                        <div class="abt_det" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="800">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sagittis volutpat nisi, a
+                                lacinia urna pulvinar nec. Maecenas pretium sit amet ex nec mollis. In hendrerit id diam
+                                sed tempor.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sagittis volutpat nisi, a
+                                lacinia urna pulvinar nec. Maecenas pretium sit amet ex nec mollis. In hendrerit id diam
+                                sed tempor.</p>
                         </div>
-        
-                    <div class="full_content abt_section">
-                        <div class="container-fluid">
-                            <div class="abt_content">
-                                <h3>GEORGE LOREM IPSUM TEXT</h3>
-                                <div class="abt_det">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sagittis volutpat nisi, a lacinia urna pulvinar nec. Maecenas pretium sit amet ex nec mollis. In hendrerit
-                                            id diam sed tempor.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sagittis volutpat nisi, a lacinia urna pulvinar nec. Maecenas pretium sit amet ex nec mollis. In hendrerit
-                                            id diam sed tempor.</p>
-                                </div>
-                            </div>     
-                         </div>
                     </div>
-                    <div class="abt_bg"></div>
+                </div>
+            </div>
+            <div class="abt_bg"></div>
+        </div>
+        <div class="section" id="section3">
+            <div class="container-fluid">
+                <div class="quote_wrap">
+                    <div class="quote_holder" data-aos="fade-down" data-aos-duration="1000">
+                        THE BEST FITNESS FOOD DELIVERY
+                        <br/> IN LONDON. NO OTHER SERVICE
+                        <br/> COMPETES IN TASTE, QUALITY,
+                        <br/> OR SERVICE
+                    </div>
+                    <div class="quote_auth"  data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">
+                        <h4>JOE WHICKS</h4>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="section" id="section4">
+            <div class="goals_bg">
+                <div class="goals g1 trainer active"></div>
+                <div class="goals g2 bulker "></div>
+                <div class="goals g3 maintainer "></div>
+            </div>
+            <div class="goals_wrap">
+                <div class="container-fluid">
+                    <div class="hz_title hz_l">
+                        <h3>GOALS</h3>
+                    </div>
+                    <div class="row goals_row">
+                        <div class="goals_col col-md-4 ">
+                            <div class="goal_item goal_1 active">
+                                <h3>TRAINER</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sagittis volutpat nisi,
+                                    a lacinia urna pulvinar nec. Maecenas pretium sit amet ex nec mollis. In hendrerit id
+                                    diam sed tempor.</p>
+                            </div>
+                        </div>
+
+                        <div class="goals_col col-md-4 ">
+                            <div class="goal_item goal_2">
+                                <h3>BULKER</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sagittis volutpat nisi,
+                                    a lacinia urna pulvinar nec. Maecenas pretium sit amet ex nec mollis. In hendrerit id
+                                    diam sed tempor.</p>
+                            </div>
+                        </div>
+
+                        <div class="goals_col col-md-4 ">
+                            <div class="goal_item goal_3">
+                                <h3>MAINTAINER</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sagittis volutpat nisi,
+                                    a lacinia urna pulvinar nec. Maecenas pretium sit amet ex nec mollis. In hendrerit id
+                                    diam sed tempor.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="section favorites" id="section5">
+            <div class="fav_slider" >
+                <div class="swiper-contain">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="fav_im" style="background: url(img/vegs.jpg) no-repeat center #fff;">
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="fav_im" style="background: url(img/vegs.jpg) no-repeat center #fff;">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="fav_im" style="background: url(img/vegs.jpg) no-repeat center #fff;">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="fav_im" style="background: url(img/vegs.jpg) no-repeat center #fff;">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="fav_im" style="background: url(img/vegs.jpg) no-repeat center #fff;">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="fav_im" style="background: url(img/vegs.jpg) no-repeat center #fff;">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="fav_cont">
+                <div class="container-fluid line line_full">
+                    <div class="line-hz ld"></div>
+                </div>
+                <div class="fav_title">
+                    <h3 class="ftitle">KATSU BOX</h3>
+
+                </div>
+                <div class="favitem">
+                    <ul class="fav_list">
+                        <li>
+                            <div class="fav_det">CARBOHYDRATE</div>
+                            <div class="fav_amt">99</div>
+                        </li>
+                        <li>
+                            <div class="fav_det">PROTEIN</div>
+                            <div class="fav_amt">101</div>
+                        </li>
+                        <li>
+                            <div class="fav_det">FAT</div>
+                            <div class="fav_amt">99</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="hz_title hz_l">
+                    <h3>FAVOURITES</h3>
+                </div>
+            </div>
+        </div>
+        <div class="section footer" id="footer">
+            <div class="container-fluid">
+                <div class="maps">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="loc_item">
+                                <h4>Bethnal Green</h4>
+                                <div class="loc_meta">
+                                    <a href="#">DELIVEROO</a>
+                                    <a href="#">UBER EATS</a>
+                                </div>
+                                <div class="map_holder">
+                                    <div class="m_placeholder">MAP</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="loc_item">
+                                <h4>BATTERSEA</h4>
+                                <div class="loc_meta">
+                                    <a href="#">DELIVEROO</a>
+                                    <a href="#">UBER EATS</a>
+                                </div>
+                                <div class="map_holder">
+                                    <div class="m_placeholder">MAP</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="loc_item">
+                                <h4>HOLLOWAY</h4>
+                                <div class="loc_meta">
+                                    <a href="#">COMING SOON</a>
+                                </div>
+                                <div class="map_holder">
+                                    <div class="m_placeholder">MAP</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="foot_wdts">
+                    <div class="row">
+                        <div class="col-md-4 ft_widget">
+                            <div class="ft_wd_item">
+                                <h4>SUBSCRIBE TO OUR NEWSLETTER</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sagittis volutpat nisi, a lacinia urna pulvinar nec. Maecenas pretium sit amet ex nec.</p>
+                                <form action="#">
+                                    <div class="email_form">
+                                        <input type="text" placeholder="EMAIL ADDRESS">
+                                        <input type="submit" value="SEND">
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 ft_widget">
+                            <div class="ft_wd_item">
+                                <h4>CONTACT US</h4>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                            <div class="c_det">
+                                                    <h5>GENERAL</h5>
+                                                    <h5>INFO@GYMFOODDELIVERY.CO.UK</h5>
+                                                </div>
+                                                <div class="c_det">
+                                                        <h5>CAREERS</h5>
+                                                        <h5>JOBS@GYMFOODDELIVERY.CO.UK</h5>
+                                                    </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                            <div class="c_det">
+                                                    <h5>PRESS</h5>
+                                                    <h5>PRESS@GYMFOODDELIVERY.CO.UK</h5>
+                                                </div>
+                                                <div class="c_det">
+                                                        <h5>FEEDBACK</h5>
+                                                        <h5>HELLO@GYMFOODDELIVERY.CO.UK</h5>
+                                                    </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 ft_widget">
+                            <div class="ft_wd_item">
+                                <h4>SOCIAL</h4>
+                                <ul class="social_link">
+                                    <li><a href="#">
+                                        <img src="img/insta.png" alt="insta"> <span> Instagram </span>
+                                    </a></li>
+                                    <li><a href="#">
+                                            <img src="img/fb.png" alt="insta"> <span> Facebook </span>
+                                        </a></li>
+                                        
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="foot_copyt">
+                    <div class="copy">
+                        ©2019 GYMFOOD DELIVERY LTD.
+                    </div>
+                    <div class="td">DESIGN: MATINÉE</div>
+                </div>
+            </div>
         </div>
     </div>
+
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/fullpage.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/main.js"></script>
     <script type="text/javascript">
         var myFullpage = new fullpage('#fullpage', {
-
+            onLeave: function(){
+    $('.section [data-aos]').each(function(){
+        $(this).removeClass("aos-animate")
+    });
+},
+onSlideLeave: function(){
+    $('.slide [data-aos]').each(function(){
+        $(this).removeClass("aos-animate")
+    });
+},
+afterSlideLoad: function(){
+    $('.slide.active [data-aos]').each(function(){
+        $(this).addClass("aos-animate")
+    });
+},
+afterLoad: function(){
+    $('.section.active [data-aos]').each(function(){
+        $(this).addClass("aos-animate")
+    });
+}
         });
+        var swiper = new Swiper('.swiper-contain', {
+            navigation: false,
+            resistance: true,
+            resistanceRatio: 0,
+            autoplay: true,
+            item: 1,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            },
+        });
+        
     </script>
+    <script>
+        AOS.init();
+        </script>
 
 </body>
 
